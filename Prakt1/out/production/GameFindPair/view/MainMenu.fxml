@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #006400;"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.MainMenuController">
+    <children>
+        <AnchorPane layoutY="103.0" prefHeight="297.0" prefWidth="600.0" style="-fx-background-color: #EFF8FB;"
+                    AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="103.0">
+            <children>
+                <Label layoutX="186.0" layoutY="22.0" text="select the size">
+                    <font>
+                        <Font name="Arial" size="36.0"/>
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="numCardsVerChoiceBox" layoutX="219.0" layoutY="98.0"
+                           prefHeight="42.0" prefWidth="54.0"/>
+                <Label layoutX="287.0" layoutY="87.0" text="x">
+                    <font>
+                        <Font size="36.0"/>
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="numCardsHorChoiceBox" layoutX="319.0" layoutY="98.0"
+                           prefHeight="42.0" prefWidth="54.0"/>
+                <Button fx:id="playGameBtn" layoutX="216.0" layoutY="211.0" mnemonicParsing="false"
+                        onAction="#playGameBtnAction" prefHeight="53.0" prefWidth="169.0" text="Play Game">
+                    <font>
+                        <Font name="Arial" size="24.0"/>
+                    </font>
+                </Button>
+                <Label fx:id="errorLabel" layoutX="219.0" layoutY="149.0" prefHeight="21.0" prefWidth="276.0"
+                       textFill="RED"/>
+            </children>
+        </AnchorPane>
+        <Label layoutX="162.0" layoutY="14.0" prefHeight="71.0" prefWidth="276.0" text="FindThePair" textFill="WHITE">
+            <font>
+                <Font name="Georgia" size="48.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

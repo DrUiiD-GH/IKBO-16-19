@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #006400;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FinishGameController">
+    <children>
+        <AnchorPane layoutY="103.0" prefHeight="297.0" prefWidth="600.0" style="-fx-background-color: #EFF8FB;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="103.0">
+            <children>
+                <Label layoutX="55.0" layoutY="50.0" text="Your time: ">
+                    <font>
+                        <Font name="Arial" size="36.0" />
+                    </font>
+                </Label>
+                <Label layoutX="109.0" layoutY="115.0" text="Errors:">
+                    <font>
+                        <Font name="Arial" size="36.0" />
+                    </font>
+                </Label>
+                <Label fx:id="resultTimeLabel" layoutX="236.0" layoutY="45.0" prefHeight="53.0" prefWidth="325.0" text="13 s" textFill="#556b2f">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+                <Label fx:id="resultErrorsLabel" layoutX="235.0" layoutY="109.0" prefHeight="53.0" prefWidth="131.0" text="10" textFill="#556b2f">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+                <Button fx:id="mainMenuBtn" layoutX="336.0" layoutY="201.0" mnemonicParsing="false" onAction="#mainMenuBtnOnAction" prefHeight="53.0" prefWidth="168.0" text="Main Menu" />
+                <Button fx:id="playAgainBtn" layoutX="109.0" layoutY="201.0" mnemonicParsing="false" onAction="#playAgainBtnOnAction" prefHeight="53.0" prefWidth="168.0" text="Play Again" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="113.0" layoutY="14.0" prefHeight="71.0" prefWidth="362.0" text="Congratulations!" textFill="WHITE">
+            <font>
+                <Font name="Georgia" size="48.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
